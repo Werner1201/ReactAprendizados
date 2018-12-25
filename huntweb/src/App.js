@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-
+//Um componente possui a parte visual (HTML, Css),  e a parte de declarar variaveis 
 class App extends Component {
   render() {
     return (
