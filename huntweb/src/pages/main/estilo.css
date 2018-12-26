@@ -40,3 +40,35 @@
     color: #fff;
 
 }
+
+.lista-produtos .acoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.lista-produtos .acoes button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background: #da552f;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lista-produtos .acoes button[disabled]{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.lista-produtos .acoes button:hover {
+    opacity: 0.7;
+
+}
+
+.lista-produtos .acoes button[disabled]:hover{
+    opacity: 0.5;
+    
+}
