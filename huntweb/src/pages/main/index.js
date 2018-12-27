@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
 import './estilo.css';
+import {Link} from 'react-router-dom';
 
 export default class Main extends Component {
     //um State eh um objeto usado para armazenar as variaveis a seres utilizadas para fornecer dados a serem exibidos
@@ -55,7 +56,7 @@ export default class Main extends Component {
                     <strong>{product.title}</strong>
                     <p>{product.description}</p>
 
-                    <a href='#'>Acessar</a>
+                    <Link to={`/product/${product._id}`}>Acessar</Link>
                 </article>
             ))}
             <div className="acoes">
